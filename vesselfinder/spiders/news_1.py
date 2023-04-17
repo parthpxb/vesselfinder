@@ -26,6 +26,8 @@ class News1Spider(scrapy.Spider):
         # self.return_final.create_index('Hash_id', unique=True)
         # self.return_final = self.test['']
 
+    def get_Data(self):
+        print("data")
 
     def start_requests(self):
         record = self.category.find({"status": 'pending','No':'2'}, no_cursor_timeout=True)

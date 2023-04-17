@@ -11,7 +11,7 @@ class CategorySpider(scrapy.Spider):
 
     def parse(self, response):
         url = "https://www.vesselfinder.com/news"
-
+        url = url
         url = url
 
         payload = {}
